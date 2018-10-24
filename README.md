@@ -36,4 +36,38 @@ example-> import express from 'express'
 * module path ==> to simplify file paths
 	Core module= no need to install separately
 
-	
+* index.html always overrides whats in app.js
+
+*** nodemon ..like devtools in spring
+Install globally => sudo npm install nodemon -g
+
+$ nodemon app.js
+
+---------------------
+Template engines(ejs,pug,jade etc)
+
+EJS=>Embedded javascript
+npm install ejs --save
+
+-----------------------
+Form validator
+
+Express validator
+npm install express-validator --save
+
+----------------
+MongoDB
+
+mongo
+show dbs
+use customerapp
+db.createCollection('users')
+show collections
+
+db.users.insert([{first_name:'John',last_name:'Doe', email:'jdoe@gmail.com'},{first_name:'beth',last_name:'Smith',email:'bsmith@gmail.com'},{first_name:'Kevin',last_name:'Johnson',email:'kjohnson@gmail.com'}])
+
+db.users.find().pretty()
+
+
+---mongojs is an ORM..like mongoose
+npm install mongojs --save
